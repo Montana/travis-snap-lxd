@@ -33,3 +33,4 @@ script:
   - snap services lxd
   - sudo snap install --channel=edge vlc
   - which vlc 
+  - snapcraft extensions
