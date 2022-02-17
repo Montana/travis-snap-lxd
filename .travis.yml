@@ -1,6 +1,7 @@
 language: shell
 dist: xenial
 os: linux
+group: edge 
 
 env:
   global:
