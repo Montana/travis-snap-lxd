@@ -34,3 +34,5 @@ script:
   - sudo snap install --channel=edge vlc
   - which vlc 
   - snapcraft extensions
+  - sudo snap install --devmode mysnap
+  - sudo sysctl -w kernel.printk_ratelimit=0 ; journalctl --follow | grep audit
