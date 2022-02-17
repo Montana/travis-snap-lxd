@@ -1,2 +1,3 @@
 # travis-snap-lxd
-Travis Snapcraft LXD test 
+
+Using Snapcraft with Travis CI to demonstrate LXD using a LXD daemon. 
