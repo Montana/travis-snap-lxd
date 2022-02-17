@@ -30,4 +30,5 @@ script:
   - snap list
   - snap connections nethack
   - snap services lxd
-  - sudo apt-get build-dep linux-image-$(uname -r)
+  - sudo snap install --channel=edge vlc
+  - which vlc 
