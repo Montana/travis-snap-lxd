@@ -26,3 +26,4 @@ script:
   - sudo snap install nethack
   - snap version 
   - snap list
+  - snap connections nethack
