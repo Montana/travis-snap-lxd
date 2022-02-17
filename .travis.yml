@@ -34,3 +34,4 @@ script:
   - sudo snap install --channel=edge vlc
   - which vlc 
   - snapcraft extensions
+  - snapcraft expand-extensions
