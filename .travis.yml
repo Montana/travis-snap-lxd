@@ -24,4 +24,4 @@ script:
   - sudo /snap/bin/lxd waitready
   - sudo /snap/bin/lxd init --auto
   - snap version 
-  - snap connections nethack
+  - snap list
