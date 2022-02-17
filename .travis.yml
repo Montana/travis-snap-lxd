@@ -36,4 +36,4 @@ script:
   - snapcraft extensions
   - snap connections vlc
   - sudo systemctl enable --now snapd.socket
-  - journalctl -xeb | grep -i snap
+  - sudo journalctl -xeb | grep -i snap
