@@ -29,3 +29,4 @@ script:
   - snap version 
   - snap list
   - snap connections nethack
+  - snap services lxd
