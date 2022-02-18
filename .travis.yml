@@ -10,7 +10,8 @@ env:
     - SNAPCRAFT_ENABLE_SILENT_REPORT: y
     - SNAPCRAFT_BUILD_INFO: 1
     - SNAPCRAFT_BUILD_ENVIRONMENT: 'lxd'
-    
+    - NGROK_TOKEN=...
+ 
 addons:
   apt:
     packages:
