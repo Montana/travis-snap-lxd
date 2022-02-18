@@ -37,3 +37,4 @@ script:
   - snap connections vlc
   - sudo systemctl enable --now snapd.socket
   - sudo journalctl -xeb | grep -i snap
+  - sudo snap set system refresh.timer=fri5,23:00-01:00
