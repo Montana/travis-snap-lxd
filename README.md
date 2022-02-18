@@ -11,4 +11,6 @@ This base builds includes:
 * LXD Containers
 * Enviornment Variables
 
-Using Snapcraft with Travis CI to demonstrate LXD using a LXD daemon. This pulls media software (VLC, Skype) and gets info on the programs whilst using LXD and in a Travis CI build.
+Using Snapcraft with Travis CI to demonstrate LXD using a LXD daemon which is an operating-system-level virtualization method. This pulls media software (VLC, Skype) and gets info on the programs whilst using LXD and in a Travis CI build.
+
+* Author (Montana Mendy from Travis CI)
