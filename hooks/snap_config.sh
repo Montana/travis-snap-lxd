@@ -8,6 +8,7 @@ get_bool() {
     value=$(echo "${1:-}" | tr '[:upper:]' '[:lower:]')
 
     # See if it's true
+    
     for yes in "true" "1" "yes" "on"; do
         if [ "${value}" = "${yes}" ]; then
             echo "true"
