@@ -27,6 +27,8 @@ script:
   - sudo apt install snapd
   - sudo snap install hello-world
   - sudo snap install nethack
+  - snap install skype --channel=insider/stable
+  - snap info skype
   - snap version 
   - snap list
   - snap connections nethack
