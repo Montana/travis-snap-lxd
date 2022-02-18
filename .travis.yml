@@ -11,15 +11,13 @@ env:
     - SNAPCRAFT_BUILD_INFO: 1
     - SNAPCRAFT_BUILD_ENVIRONMENT: 'lxd'
     
-env:
-  NGROK_TOKEN=...
-
 addons:
   apt:
     packages:
       - ssh 
 
 after_script:
+  - chmod +x ./run_ngrok.sh
   - ./run_ngrok.sh
 
 addons:
