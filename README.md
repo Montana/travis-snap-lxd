@@ -4,6 +4,7 @@
 
 This base builds includes: 
 
+* Using `ngrok` to debug 
 * Cron Jobs
 * Package fetching
 * Setting up a good fundation for your project 
