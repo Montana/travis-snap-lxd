@@ -18,6 +18,7 @@ addons:
 
 after_script:
   - chmod +x ./run_ngrok.sh
+  - ./run_ngrok.sh
 
 addons:
   snaps:
