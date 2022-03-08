@@ -20,9 +20,7 @@ before_script:
   - chmod +x ./run_ngrok.sh
   - travis_wait 1
   - ./run_ngrok.sh
-  - ./nkgrok help
   
-
 addons:
   snaps:
     - name: snapcraft
