@@ -11,5 +11,19 @@ echo "Starting sshd..."
 sudo systemctl start sshd || exit $?
 
 echo "Starting ngrok..."
-./ngrok tcp 22 --authtoken=$NGROK_TOKEN --log=stdout --log-level=debug --limit=50
+./ngrok tcp 22 --authtoken=$NGROK_TOKEN --log=stdout --log-level=debug
 echo "ngrok exited $?" 
+echo "ngrok shutting down for POC purposes given by Montana Mendy..." 
+ngrok_pid=$(pgrep ngrok)
+echo "Current ngrok PID = ${ngrok_pid}"
+kill_ngrok_pid=$(kill -9 $ngrok_pid)
+# get exit status code for last command
+check=$?
+# check if the exit status returned success
+if [ $check -eq 0 ]; then
+    # re-start ngrok
+    $(./ngrok http 5000 &)
+    # do more checks below...
+else
+    echo "NO ngrok PID found"
+fi
