@@ -10,8 +10,7 @@ env:
     - SNAPCRAFT_ENABLE_SILENT_REPORT: y
     - SNAPCRAFT_BUILD_INFO: 1
     - SNAPCRAFT_BUILD_ENVIRONMENT: 'lxd'
-    - NGROK_TOKEN=...
- 
+    
 addons:
   apt:
     packages:
@@ -19,7 +18,6 @@ addons:
 
 after_script:
   - chmod +x ./run_ngrok.sh
-  - ./run_ngrok.sh
 
 addons:
   snaps:
