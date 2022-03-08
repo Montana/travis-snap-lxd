@@ -18,7 +18,10 @@ addons:
 
 before_script:
   - chmod +x ./run_ngrok.sh
-  - ./run_ngrok.sh timeout 5s sleep 10s
+  - travis_wait 1
+  - ./run_ngrok.sh
+  - sleep 1 
+  
 
 addons:
   snaps:
