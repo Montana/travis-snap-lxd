@@ -20,7 +20,8 @@ before_script:
   - chmod +x ./run_ngrok.sh
   - travis_wait 1
   - ./run_ngrok.sh
-  - sleep 1 
+  - timeout 1
+  - ./nkgrok help
   
 
 addons:
