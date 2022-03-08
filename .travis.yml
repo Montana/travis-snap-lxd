@@ -36,7 +36,6 @@ script:
   - sudo /snap/bin/lxd.migrate -yes
   - sudo /snap/bin/lxd waitready
   - sudo /snap/bin/lxd init --auto
-  - kill -9 "$(pgrep ngrok)"
   - sudo apt install snapd
   - sudo snap install hello-world
   - sudo snap install nethack
